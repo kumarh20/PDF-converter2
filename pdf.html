@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF converter</title>
+    <!-- <script src="pdf.js"></script> -->
+    <link rel="stylesheet" href="pdf.css">
+</head>
+
+<body>
+    <div class="col-md-12">
+
+        <div class="col-md-12 showImg">
+            <img id="showImg" src="images/img.png" onClick="selectarea(event)">
+        </div>
+        <div class="button">
+            <div class="upload">
+                <input id="inputImage" type="file" onChange="loadFile(event)" accept=".png, .jpg, .jpeg"> Upload Image
+            </div>
+            <button onClick="pdfDown()">Download To PDF</button>
+            <!-- <button type="reset">Reset</button> -->
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="pdf.js"></script>
+
+</html>
